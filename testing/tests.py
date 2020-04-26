@@ -15,8 +15,7 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(addition(self, 12, 7), 19)
 
     def test_addition_pass_return_values(self):
-        with self.assertRaises(TypeError):
-            addition(self, "not a number", 2)
+        self.assertRaises(TypeError, addition, self, "not a number", 2)
 
 
 if __name__ == '__main__':
