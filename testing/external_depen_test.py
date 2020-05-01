@@ -4,6 +4,7 @@ from unittest import mock
 # explained mocking well
 # https://medium.com/python-pandemonium/python-mocking-you-are-a-tricksy-beast-6c4a1f8d19b2
 
+
 class ExternalServices():
 
     def call_service(self, request_params):
